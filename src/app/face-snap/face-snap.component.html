@@ -2,6 +2,7 @@
   <h2>{{ faceSnap.title | uppercase }}</h2>
   <p>Mis en ligne le {{ faceSnap.createdDate | date: 'dd/MM/yy, à HH:mm' }}</p>
   <p>{{ 47 | percent }}</p>
+  <p>{{ 0.336 | percent }}</p>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
   <p>{{ faceSnap.description }}</p>
   <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
